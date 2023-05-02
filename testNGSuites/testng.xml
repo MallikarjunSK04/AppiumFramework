@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	
+	<listeners>
+		<listener class-name="mallikarjun.testUtils.Listeners"/>
+	</listeners>
+	
+  <test thread-count="5" name="End to End Test">
+    <classes>
+      <class name="mallikarjun.test.Ecommerce_tc4_Hybrid"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="ErrorValidation">
+    <classes>
+      <class name="mallikarjun.test.Ecommerce_tc1"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
